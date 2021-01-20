@@ -12,9 +12,9 @@ readMeContents.push("# Wiki");
 readMeContents.push("");
 readMeContents.push("## Оглавление");
 readMeContents.push("");
-readMeContents = readMeContents.concat(fs.getListOfMDFiles(__dirname).map(filename => `[${filename.split(".")[0]}](${filename})`));
+readMeContents = readMeContents.concat(fs.getListOfMDFiles(__dirname).map(filename => `- [${filename.split(".")[0]}](${filename})`));
 readMeContents.push("");
-readMeContents.push("Помочь проекту [Technical-Excellence-Russia/wiki](https://github.com/Technical-Excellence-Russia/wiki)");
+readMeContents.push("Помочь проекту [Technical-Excellence-Russia/wiki](https://github.com/Technical-Excellence-Russia/wiki).");
 readMeContents.push("");
 readMeContents.push("Copyright (c) 2021 Technical Excellence Russia");
 

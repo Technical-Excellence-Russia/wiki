@@ -18,16 +18,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Lint markdown
-        run: npx markdownlint-cli ./*.md --fix
-        env:
-          CI: true
-
-      - name: Spellcheck
-        run: npx yaspeller -l ru ./*.md
-        env:
-          CI: true
-
       - name: Test & Generate
         run: |
             npm i
@@ -36,10 +26,20 @@ jobs:
         env:
           CI: true
 
+      - name: Lint markdown
+        run: npm run lint
+        env:
+          CI: true
+
+      - name: Spellcheck
+        run: npm run spell
+        env:
+          CI: true
+
       - name: Commit files
         run: |
           git config --local user.email "wiki[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.name "wiki[bot]"
           git commit -am "Generate README.md"
       - name: Push changes
         uses: ad-m/github-push-action@master

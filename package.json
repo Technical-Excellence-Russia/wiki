@@ -5,6 +5,8 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "lint": "npx markdownlint-cli ./*.md --fix",
+    "spell": "npx yaspeller -l ru ./*.md",
     "test": "npx mocha",
     "start": "node index.js"
   },
