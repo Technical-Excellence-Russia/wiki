@@ -1,0 +1,34 @@
+{
+  "name": "technical-excellence-russia-wiki",
+  "version": "1.0.0",
+  "description": "Technical Excellence Wiki",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "npx mocha",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Technical-Excellence-Russia/wiki.git"
+  },
+  "keywords": [
+    "wiki",
+    "technical",
+    "excellence"
+  ],
+  "author": "Technical Excellence Russia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Technical-Excellence-Russia/wiki/issues"
+  },
+  "homepage": "https://github.com/Technical-Excellence-Russia/wiki#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.2.0",
+    "chai": "^4.2.0",
+    "colors": "^1.4.0",
+    "mocha": "^8.2.1"
+  },
+  "dependencies": {}
+}
