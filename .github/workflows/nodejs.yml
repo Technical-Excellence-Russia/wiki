@@ -29,7 +29,10 @@ jobs:
           CI: true
 
       - name: Test & Generate
-        run: npm test && npm start
+        run: |
+            npm i
+            npm test
+            npm start
         env:
           CI: true
 
