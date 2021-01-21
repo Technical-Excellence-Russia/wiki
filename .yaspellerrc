@@ -1,0 +1,31 @@
+{
+  "lang": "ru",
+  "checkYo": false,
+  "fileExtensions": [
+    ".md"
+  ],
+  "excludeFiles": [
+    ".git",
+    ".markdownlintrc"
+  ],
+  "ignoreUppercase": true,
+  "ignoreUrls": true,
+  "ignoreCapitalization": true,
+  "ignoreText": [],
+  "dictionary": [
+        "XPшник.*",
+        "баг.*",
+        "Бернхардт.*",
+        "Бодарт.*",
+        "Бэк.*",
+        "верхнеуровнев.*",
+        "коммит.*",
+        "коммуницирующи.*",
+        "мокист.*",
+        "пайплайн.*",
+        "[С,с]амотестирующ.*",
+        "Хайнемейер.*",
+        "Хэнссон.*",
+        "Филдс.*"
+  ]
+}

@@ -1,0 +1,48 @@
+name: Node CI
+
+on: [ push ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [ 12.x ]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Test & Generate
+        run: |
+            npm i
+            npm test
+            npm start
+        env:
+          CI: true
+
+      - name: Lint markdown
+        run: npm run lint
+        env:
+          CI: true
+
+      - name: Spellcheck
+        run: npm run spell
+        env:
+          CI: true
+
+      - name: Commit files
+        run: |
+          git config --local user.email "wiki[bot]@users.noreply.github.com"
+          git config --local user.name "wiki[bot]"
+          git commit -am "Generate README.md"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
