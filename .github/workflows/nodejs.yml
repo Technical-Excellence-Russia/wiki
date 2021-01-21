@@ -20,19 +20,14 @@ jobs:
 
       - name: Test & Generate
         run: |
-            npm i
-            npm test
-            npm start
+          npm i
+          npm test
+          npm start
         env:
           CI: true
 
-      - name: Lint markdown
-        run: npm run lint
-        env:
-          CI: true
-
-      - name: Spellcheck
-        run: npm run spell
+      - name: Lint & spellcheck markdown
+        run: npm run check
         env:
           CI: true
 
@@ -41,6 +36,7 @@ jobs:
           git config --local user.email "wiki[bot]@users.noreply.github.com"
           git config --local user.name "wiki[bot]"
           git commit -am "Generate README.md"
+
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
