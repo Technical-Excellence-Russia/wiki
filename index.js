@@ -18,11 +18,13 @@ readMeContents.push("Подборка материалов по техничес
 readMeContents.push("");
 readMeContents.push("## Оглавление");
 readMeContents.push("");
-readMeContents = readMeContents.concat(fs.getListOfMDFiles(__dirname).map(filename => {
-        const articleName = parser.getArticleName(fs.readFile(filename));
-        return `- [${articleName}](${filename})`;
-    }
-));
+readMeContents = readMeContents.concat(
+    fs.getListOfMDFiles(__dirname).map(filename => {
+            const articleName = parser.getArticleName(fs.readFile(filename));
+            return `- [${articleName}](${filename})`;
+        }
+    ).sort((a, b) => a.localeCompare(b))
+);
 readMeContents.push("");
 readMeContents.push("Copyright (c) 2021 Technical Excellence Russia");
 
