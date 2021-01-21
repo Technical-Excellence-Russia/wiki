@@ -1,11 +1,15 @@
 const fs = require("./lib/fs");
+const Parser = require("./lib/parser");
 const Logger = require("./lib/logger");
+
+const parser = new Parser();
 
 const rootFileName = __dirname + "/" + "README.md";
 const EOL = "\r\n";
 
 const logger = new Logger();
 logger.info("File spellchecking and generation:");
+
 
 let readMeContents = [];
 readMeContents.push("# Wiki");
@@ -14,7 +18,11 @@ readMeContents.push("Подборка материалов по техничес
 readMeContents.push("");
 readMeContents.push("## Оглавление");
 readMeContents.push("");
-readMeContents = readMeContents.concat(fs.getListOfMDFiles(__dirname).map(filename => `- [${filename.split(".")[0]}](${filename})`));
+readMeContents = readMeContents.concat(fs.getListOfMDFiles(__dirname).map(filename => {
+        const articleName = parser.getArticleName(fs.readFile(filename));
+        return `- [${articleName}](${filename})`;
+    }
+));
 readMeContents.push("");
 readMeContents.push("Copyright (c) 2021 Technical Excellence Russia");
 
