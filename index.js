@@ -26,6 +26,8 @@ readMeContents = readMeContents.concat(
     ).sort((a, b) => a.localeCompare(b))
 );
 readMeContents.push("");
+readMeContents.push("Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).");
+readMeContents.push("");
 readMeContents.push("Copyright (c) 2021 Technical Excellence Russia");
 
 let startTime = new Date().getTime();
