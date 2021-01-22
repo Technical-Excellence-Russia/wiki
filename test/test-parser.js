@@ -2,17 +2,43 @@ const Parser = require("../lib/parser");
 const {expect} = require("chai");
 require("mocha");
 
+class FS {
+
+    constructor(content) {
+        this.content = content;
+    }
+
+    getListOfMDFiles(dirName) {
+        return Object.keys(this.content);
+    }
+
+    readFile(fileName) {
+        return this.content[fileName];
+    }
+
+}
+
 
 describe("Parser should", () => {
 
-	const parser = new Parser();
+    const fs = new FS({
+            "fileOne.md": "# Complete Article\r\nSome Content",
+            "fileTwo.md": "# Incomplete Article [draft]\r\nSome Content",
+            "fileThree.md": "# Other Article\r\nSome Content"
+        }
+    );
+    const parser = new Parser(fs);
 
-	it("return Article Name", () => {
-		const arrange = "# Main Header\r\n## Header 1 \r\n## Header 2 \n## Header 3";
+    it("return Article Name", () => {
+        const result = parser.getArticleName("fileThree.md");
 
-		const result = parser.getArticleName(arrange);
+        expect(result).is.equal("Other Article");
+    });
 
-		expect(result).is.equal("Main Header");
-	});
+    it("return table of contents", () => {
+        const result = parser.filesToContent(".");
+
+        expect(result).has.length(2);
+    });
 
 });
