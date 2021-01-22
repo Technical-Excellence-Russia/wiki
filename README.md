@@ -4,18 +4,9 @@
 
 ## Оглавление
 
-- [SOLID - принципы](SOLID.md)
 - [Unit-тест](UnitTest.md)
 - [XUnit](Xunit.md)
-- [Непрерывная интеграция (CI)](ContinuousIntegration.md)
 - [Принцип единственной ответственности (SRP)](SingleResponsibilityPrinciple.md)
-- [Принцип инверсии зависимостей (DIP)](DependencyInversionPrinciple.md)
-- [Принцип открытости/закрытости (OCP)](OpenClosedprinciple.md)
-- [Принцип подстановки Барбары Лисков (LSP)](LiskovSubstitutionPrinciple.md)
-- [Принцип разделения интерфейсов (ISP)](InterfaceSegregationPrinciple.md)
-- [Разработка через тестирование (TDD)](TDD.md)
-- [Рефакторинг](Refactoring.md)
-- [Экстремальное Программирование (XP)](eXtremeProgramming.md)
 
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
 
