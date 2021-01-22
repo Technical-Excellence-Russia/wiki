@@ -4,6 +4,7 @@
 
 ## Оглавление
 
+- [SOLID - принципы](SOLID.md)
 - [Unit-тест](UnitTest.md)
 - [XUnit](Xunit.md)
 - [Принцип единственной ответственности (SRP)](SingleResponsibilityPrinciple.md)
