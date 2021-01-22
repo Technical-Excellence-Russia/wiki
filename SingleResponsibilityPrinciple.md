@@ -5,7 +5,7 @@
 Этот принцип впервые был описан в работах [Тома ДеМарко](https://www.amazon.com/Structured-Analysis-System-Specification-DeMarco/dp/0138543801) и [Мейлира Пейдж-Джонса](https://www.amazon.com/Practical-Guide-Structured-Systems-Design/dp/0136907695/). Они назвали его *сцепленностью* (cohesion), определив ее как функциональную связанность элементов модуля. Далее мы будем понимать под сцепленностью силы, заставляющие модуль или класс изменяться. Один из группы принципов [SOLID](SOLID.md).
 
 ---
-**Принцип единственной ответственности (Single-Responsibility Principle – SRP)**
+**Принцип единственной ответственности (Single-Responsibility Principle – SRP).**
 
 *У класса должна быть только одна причина для изменения.*
 
