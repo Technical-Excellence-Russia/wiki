@@ -6,7 +6,7 @@
 
 - [SOLID - принципы](SOLID.md)
 - [Unit-тест](UnitTest.md)
-- [XUnit](Xunit.md)
+- [Xunit](Xunit.md)
 - [Принцип единственной ответственности (SRP)](SingleResponsibilityPrinciple.md)
 
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
