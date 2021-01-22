@@ -23,6 +23,6 @@
 | SDP          | [Принцип устойчивых зависимостей (Stable-Dependencies Principle)](StableDependenciesPrinciple.md)                                      |
 | SAP          | [Принцип устойчивых абстракций (Stable-Abstractions Principle)](StableAbstractionsPrinciple.md)                                        |
 
-Адаптировал: [Кротов Артём](http://fb.com/artem.v.krotov).
+Адаптировал: [Кротов Артём](https://fb.com/artem.v.krotov).
 
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
