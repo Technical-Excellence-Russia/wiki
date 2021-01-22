@@ -8,9 +8,9 @@
 |--------------|------------------------------------------------------------------------------------------------------------|
 | **S**RP      | [Принцип единственной ответственности (Single Responsibility Principle)](SingleResponsibilityPrinciple.md) |
 | **O**CP      | [Принцип открытости/закрытости (Open–closed principle)](OpenClosedprinciple.md)                            |
-| **L**SP      | [Принцип подстановки Барбары Лисков (Liskov substitution principle)](LiskovSubstitutionPrinciple.md)       |
-| **I**SP      | [Принцип разделения интерфейсов (Interface segregation principle)](InterfaceSegregationPrinciple.md)       |
-| **D**IP      | [Принцип инверсии зависимостей (Dependency inversion principle)](DependencyInversionPrinciple.md)          |
+| **L**SP      | [Принцип подстановки Барбары Лисков (Liskov Substitution Principle)](LiskovSubstitutionPrinciple.md)       |
+| **I**SP      | [Принцип разделения интерфейсов (Interface Segregation Principle)](InterfaceSegregationPrinciple.md)       |
+| **D**IP      | [Принцип инверсии зависимостей (Dependency Inversion Principle)](DependencyInversionPrinciple.md)          |
 
 **Другие принципы**:
 
