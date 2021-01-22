@@ -8,6 +8,7 @@
 - [Unit-тест](UnitTest.md)
 - [Xunit](Xunit.md)
 - [Принцип единственной ответственности (SRP)](SingleResponsibilityPrinciple.md)
+- [Принцип открытости/закрытости (OCP)](OpenClosedprinciple.md)
 
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
 
