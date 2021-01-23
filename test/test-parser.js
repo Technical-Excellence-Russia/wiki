@@ -1,6 +1,4 @@
 const Parser = require("../lib/parser");
-const {expect} = require("chai");
-require("mocha");
 
 class FS {
 
@@ -8,7 +6,7 @@ class FS {
         this.content = content;
     }
 
-    getListOfMDFiles(dirName) {
+    getListOfMDFiles() {
         return Object.keys(this.content);
     }
 
@@ -29,16 +27,16 @@ describe("Parser should", () => {
     );
     const parser = new Parser(fs);
 
-    it("return Article Name", () => {
+    test("return Article Name", () => {
         const result = parser.getArticleName("fileThree.md");
 
-        expect(result).is.equal("Other Article");
+        expect(result).toEqual("Other Article");
     });
 
-    it("return table of contents", () => {
+    test("return table of contents", () => {
         const result = parser.filesToContent(".");
 
-        expect(result).has.length(2);
+        expect(result).toHaveLength(2);
     });
 
 });
