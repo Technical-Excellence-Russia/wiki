@@ -8,7 +8,7 @@
     "lint": "npx markdownlint-cli ./*.md --fix",
     "spell": "npx yaspeller -l ru ./*.md",
     "check": "npm run lint && npm run spell",
-    "test": "npx mocha",
+    "test": "npx jest",
     "start": "node index.js"
   },
   "repository": {
@@ -27,11 +27,9 @@
   },
   "homepage": "https://github.com/Technical-Excellence-Russia/wiki#readme",
   "devDependencies": {
-    "@types/chai": "^4.2.14",
-    "@types/mocha": "^8.2.0",
-    "chai": "^4.2.0",
+    "@types/jest": "^26.0.20",
     "colors": "^1.4.0",
-    "mocha": "^8.2.1"
+    "jest": "^26.6.3"
   },
   "dependencies": {}
 }
