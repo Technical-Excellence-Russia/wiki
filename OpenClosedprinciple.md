@@ -1,6 +1,6 @@
 # Принцип открытости/закрытости (OCP)
 
-Оригинальный текст из книги Робертом Мартина [Agile Principles, Patterns, and Practices in C#](https://www.amazon.com/Agile-Principles-Patterns-Practices-C/dp/0131857258).
+Оригинальный текст из книги Робертом Мартина [Agile Principles, Patterns, and Practices](https://www.amazon.com/Agile-Principles-Patterns-Practices-C/dp/0131857258).
 
 [Айвар Джекобсон](https://www.amazon.com/Object-Oriented-Software-Engineering-Approach/dp/0201544350) говорил: "Любая система на протяжении своего жизненного цикла претерпевает изменения. Об этом следует помнить, разрабатывая систему, которая предположительно переживет первую версию". Как создавать системы, которые сохраняли бы стабильность перед  лицом изменений и просуществовали бы дольше первой версии? Направление указал [Бертран Мейер](https://www.amazon.com/Object-Oriented-Software-Construction-Prentice-Hall-International/dp/0136290493), который еще в 1988 году сформулировал ставший ныне знаменитым принцип открытости/закрытости. Вот как он звучит в слегка перефразированном виде:
 

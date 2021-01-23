@@ -1,6 +1,6 @@
 # Принцип единственной ответственности (SRP)
 
-Оригинальный текст из книги Робертом Мартина [Agile Principles, Patterns, and Practices in C#](https://www.amazon.com/Agile-Principles-Patterns-Practices-C/dp/0131857258).
+Оригинальный текст из книги Робертом Мартина [Agile Principles, Patterns, and Practices](https://www.amazon.com/Agile-Principles-Patterns-Practices-C/dp/0131857258).
 
 Этот принцип впервые был описан в работах [Тома ДеМарко](https://www.amazon.com/Structured-Analysis-System-Specification-DeMarco/dp/0138543801) и [Мейлира Пейдж-Джонса](https://www.amazon.com/Practical-Guide-Structured-Systems-Design/dp/0136907695/). Они назвали его *сцепленностью* (cohesion), определив ее как функциональную связанность элементов модуля. Далее мы будем понимать под сцепленностью силы, заставляющие модуль или класс изменяться. Один из группы принципов [SOLID](SOLID.md).
 
