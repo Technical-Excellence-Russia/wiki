@@ -7,7 +7,7 @@
 - [SOLID - принципы](SOLID.md)
 - [Unit-тест](UnitTest.md)
 - [Xunit](Xunit.md)
-- [Инверсия Управления (IoC)](InversionOfControl.md)
+- [Инверсия управления (IoC)](InversionOfControl.md)
 - [Принцип единственной ответственности (SRP)](SingleResponsibilityPrinciple.md)
 - [Принцип инверсии зависимостей (DIP)](DependencyInversionPrinciple.md)
 - [Принцип открытости/закрытости (OCP)](OpenClosedprinciple.md)
