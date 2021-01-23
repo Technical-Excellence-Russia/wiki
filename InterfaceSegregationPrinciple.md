@@ -47,7 +47,7 @@ public interface```Timer```Client {
 
 Как организовать взаимодействие класса ```TimerClient``` с классом ```TimedDoor``` таким образом, чтобы некий код внутри ```TimedDoor``` мог получать уведомления о тайм-ауте? Есть несколько вариантов. На рисунке ниже показано наиболее распространённое решение. Мы производим класс ```Door```, а значит, и ```TimedDoor``` от ```TimerClient```. Тем самым гарантируется, что```Timer```Client может зарегистрировать себя в объекте ```Timer``` и получить сообщение ```TimeOut```.
 
-![_](./img/solid/srp-img-01.png)
+![_](./img/solid/isp-img-01.png)
 
 *Класс```Timer```Client на вершине иерархии*
 
@@ -86,7 +86,7 @@ public interface TimerClient {
 
 Одно решение состоит в том, чтобы создать класс, который наследует ```TimerClient``` и делегирует часть своих обязанностей ```TimerDoor```. Оно показано на рисунке ниже. Когда объект хочет зарегистрировать запрос на уведомление о тайм-ауте в объекте Timer, ```TimerDoor``` создает экземпляр ```DoorTimerAdapter``` и регистрирует его в Timer. Когда Timer посылает сообщение ```TimeOut``` объекту ```DoorTimerAdapter```, тот передает его объекту ```TimerDoor```.
 
-![_](./img/solid/srp-img-02.png)
+![_](./img/solid/isp-img-02.png)
 
 *Адаптер таймера двери*
 
@@ -123,7 +123,7 @@ public interface TimedDoor extends Door, TimerClient  {
 }
 ```
 
-![_](./img/solid/srp-img-03.png)
+![_](./img/solid/isp-img-03.png)
 
 *Класс TimedDoor с множественным наследованием*
 
