@@ -1,4 +1,4 @@
-# Инверсия Управления (IoC) [draft]
+# Инверсия Управления (IoC)
 
 Перевод статьи на русский язык Мартина Фаулера [InversionOfControl](https://martinfowler.com/bliki/InversionOfControl.html)
 
