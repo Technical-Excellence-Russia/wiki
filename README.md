@@ -8,6 +8,7 @@
 - [Unit-тест](UnitTest.md)
 - [Xunit](Xunit.md)
 - [Принцип единственной ответственности (SRP)](SingleResponsibilityPrinciple.md)
+- [Принцип инверсии зависимостей (DIP)](DependencyInversionPrinciple.md)
 - [Принцип открытости/закрытости (OCP)](OpenClosedprinciple.md)
 - [Принцип подстановки Барбары Лисков (LSP)](LiskovSubstitutionPrinciple.md)
 
