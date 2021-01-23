@@ -46,7 +46,7 @@ Tk.mainloop()
 
 Другой способ сделать это — указать фреймворку на события, а клиентскому коду подписаться на эти события. dotNET - хороший пример платформы, которая имеет встроенные методы, позволяющие людям объявлять события в виджетах. Затем вы можете привязать метод к событию с помощью делегата.
 
-The above approaches (they are really the same) work well for single cases, but sometimes you want to combine several required method calls in a single unit of extension. In this case the framework can define an interface that a client code must implement for the relevant calls.
+Вышеупомянутые подходы (они действительно одинаковы) хорошо работают для отдельных случаев, но иногда вы хотите объединить несколько вызовов методов в одном модуле расширения. В этом случае фреймворк может предоставить интерфейс, который клиентский код должен реализовать для соответствующих вызовов.
 
 EJBs are a good example of this style of inversion of control. When you develop a session bean, you can implement various methods that are called by the EJB container at various lifecyle points. For example the Session Bean interface defines ejbRemove, ejbPassivate (stored to secondary storage), and ejbActivate (restored from passive state). You don't get to control when these methods are called, just what they do. The container calls us, we don't call it.
 
