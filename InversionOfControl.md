@@ -48,13 +48,21 @@ Tk.mainloop()
 
 Вышеупомянутые подходы (они действительно одинаковы) хорошо работают для отдельных случаев, но иногда вы хотите объединить несколько вызовов методов в одном модуле расширения. В этом случае фреймворк может предоставить интерфейс, который клиентский код должен реализовать для соответствующих вызовов.
 
-EJBs are a good example of this style of inversion of control. When you develop a session bean, you can implement various methods that are called by the EJB container at various lifecyle points. For example the Session Bean interface defines ejbRemove, ejbPassivate (stored to secondary storage), and ejbActivate (restored from passive state). You don't get to control when these methods are called, just what they do. The container calls us, we don't call it.
+EJB-компоненты<sup>[1](#footnote-1)<sup> - хороший пример этого стиля инверсии контроля. При разработке сессионного компонента (session bean) вы можете реализовать различные методы, которые вызываются контейнером EJB в различных точках жизненного цикла. Например, интерфейс ```Session Bean``` определяет ```ejbRemove```, ``ejbPassivate`` (сохраняется во вторичном хранилище) и ```ejbActivate``` (переходит в активное состояния). Вы не можете контролировать, когда вызываются эти методы, только то, что они делают. Контейнер звонит нам, а не мы ему.
+
+Это сложные случаи инверсии контроля, но вы можете столкнуться с этим эффектом в гораздо более простых ситуациях. Хороший пример — шаблонный метод: суперкласс определяет поток управления, подклассы расширяют эти методы переопределения или реализуют абстрактные методы при расширении. Так, в JUnit<sup>[2](#footnote-2)<sup> код фреймворка вызывает методы ```setUp``` и ```tearDown```, чтобы вы могли создать и очистить фикстуру без лишнего кода. Он выполняет вызов, ваш код реагирует — поэтому снова управление инвертировано.
 
 These are complicated cases of inversion of control, but you run into this effect in much simpler situations. A template method is a good example: the super-class defines the flow of control, subclasses extend this overriding methods or implementing abstract methods to do the extension. So in JUnit, the framework code calls setUp and tearDown methods for you to create and clean up your text fixture. It does the calling, your code reacts - so again control is inverted.
 
 There is some confusion these days over the meaning of inversion of control due to the rise of IoC containers; some people confuse the general principle here with the specific styles of inversion of control (such as dependency injection) that these containers use. The name is somewhat confusing (and ironic) since IoC containers are generally regarded as a competitor to EJB, yet EJB uses inversion of control just as much (if not more).
 
 Etymology: As far as I can tell, the term Inversion of Control first came to light in Johnson and Foote's paper Designing Reusable Classes, published by the Journal of Object-Oriented Programming in 1988. The paper is one of those that's aged well - it's well worth a read now over fifteen years later. They think they got the term from somewhere else, but can't remember what. The term then insinuated itself into the object-oriented community and appears in the Gang of Four book. The more colorful synonym 'Hollywood Principle' seems to originate in a paper by Richard Sweet on Mesa in 1983. In a list of design goals he writes: "Don't call us, we'll call you (Hollywood's Law): A tool should arrange for Tajo to notify it when the user wishes to communicate some event to the tool, rather than adopt an 'ask the user for a command and execute it' model." John Vlissides wrote a column for C++ report that provides a good explanation of the concept under the 'Hollywood Principle' moniker. (Thanks to Brian Foote and Ralph Johnson for helping me with the Etymology.)
+
+## Заметки
+
+1. <a name="footnote-1"></a> EJB (Enterprise Java Beans) - часть платформы Java EE. В года публикации статьи (2005) была прорывной технологией. Со временем уступила место более гибким и легковесным подходам, например Spring Framework и Google Guice.
+
+2. <a name="footnote-2"></a> Пример приведён для JUnit версии 3 и ниже. В более поздних версиях появилась возможность вместо расширения класса ```TestCase``` использовать аннотация для методов. Что не меняет суть концепции.
 
 Перевёл: [Кротов Артём](https://fb.com/artem.v.krotov).
 
