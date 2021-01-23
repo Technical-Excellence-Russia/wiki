@@ -1,4 +1,4 @@
-# Принцип разделения интерфейсов (ISP) [draft]
+# Принцип разделения интерфейсов (ISP)
 
 Оригинальный текст из книги Робертом Мартина [Agile Principles, Patterns, and Practices](https://www.amazon.com/Agile-Principles-Patterns-Practices-C/dp/0131857258).
 
