@@ -1,38 +1,27 @@
 const FS = require("./lib/fs");
 const Parser = require("./lib/parser");
 const Logger = require("./lib/logger");
+const Mustache = require("mustache");
 
 const fs = new FS();
 const parser = new Parser(fs);
 const logger = new Logger();
 
 const rootFileName = __dirname + "/" + "README.md";
-const EOL = "\r\n";
+const templateFileName = __dirname + "/" + "README.template";
 
-logger.info("File spellchecking and generation:");
+logger.info("File generation:");
 
+const data = {
+    currentYear: new Date().getFullYear(),
+    articles: parser.filesToContent(__dirname)
+}
 
-let readMeContents = [];
-readMeContents.push("# Wiki");
-readMeContents.push("");
-
-readMeContents.push("Подборка материалов по техническому совершенству.");
-readMeContents.push("");
-
-readMeContents.push("## Оглавление");
-readMeContents.push("");
-
-readMeContents = readMeContents.concat(parser.filesToContent(__dirname));
-readMeContents.push("");
-
-readMeContents.push("Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).");
-readMeContents.push("");
-
-readMeContents.push("Copyright (c) 2021 Technical Excellence Russia");
-readMeContents.push("");
+const template = fs.readFile(templateFileName);
 
 let startTime = new Date().getTime();
-fs.writeFileContent(rootFileName, readMeContents.join(EOL))
+const content = Mustache.render(template, data);
+fs.writeFileContent(rootFileName, content)
     .then(() => logger.infoFile(rootFileName, startTime))
     .catch(e => logger.error(e));
 

@@ -1,0 +1,13 @@
+# Wiki
+
+Подборка материалов по техническому совершенству.
+
+## Оглавление
+
+{{#articles}}
+{{{.}}}
+{{/articles}}
+
+Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
+
+Copyright (c) {{currentYear}} Technical Excellence Russia
