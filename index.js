@@ -8,7 +8,6 @@ const parser = new Parser(fs);
 const logger = new Logger();
 
 const rootFileName = __dirname + "/" + "README.md";
-const templateFileName = __dirname + "/" + "README.template";
 
 logger.info("File generation:");
 
@@ -17,7 +16,7 @@ const data = {
     articles: parser.filesToContent(__dirname)
 }
 
-const template = fs.readFile(templateFileName);
+const template = fs.readFile(rootFileName + ".template");
 
 let startTime = new Date().getTime();
 const content = Mustache.render(template, data);
