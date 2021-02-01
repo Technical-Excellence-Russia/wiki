@@ -13,6 +13,7 @@
 - [Принцип открытости/закрытости (OCP)](OpenClosedprinciple.md)
 - [Принцип подстановки Барбары Лисков (LSP)](LiskovSubstitutionPrinciple.md)
 - [Принцип разделения интерфейсов (ISP)](InterfaceSegregationPrinciple.md)
+- [С чего начать?](GetStarted.md)
 
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
 
