@@ -5,6 +5,8 @@
 ## Полезные ссылки
 
 - [Technical Excellence @ less.works](https://less.works/ru/less/technical-excellence/index)
+- [Software Developer Learning Path @ scrum.org](https://www.scrum.org/pathway/software-developer-learning-path)
+- [Team and Technical Agility @ scaledagile.com](https://www.scaledagileframework.com/team-and-technical-agility/)
 - ...
 
 ## Курсы по техническому совершенству
