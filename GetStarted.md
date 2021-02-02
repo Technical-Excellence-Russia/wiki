@@ -4,6 +4,7 @@
 
 ## Полезные ссылки
 
+- [Основы программирования: Гарвардский курс CS50](https://www.youtube.com/playlist?list=PLawfWYMUziZqyUL5QDLVbe3j5BKWj42E5)
 - [Technical Excellence @ less.works](https://less.works/ru/less/technical-excellence/index)
 - [Software Developer Learning Path @ scrum.org](https://www.scrum.org/pathway/software-developer-learning-path)
 - [Team and Technical Agility @ scaledagile.com](https://www.scaledagileframework.com/team-and-technical-agility/)
