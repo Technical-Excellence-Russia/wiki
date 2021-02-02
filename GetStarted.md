@@ -18,4 +18,12 @@
 - [Agile Software Engineering @ scaledagile.com](https://www.scaledagile.com/certification/courses/agile-software-engineering/)
 - ...
 
+## Шаблонные проекты
+
+Вы можете их использовать для изучения программирования и практики TDD на незнакомой для вас технологии.
+
+- [Template Java project for Coding Dojo](https://github.com/Technical-Excellence-Russia/coding-dojo-java)
+- [Template JS project for Coding Dojo](https://github.com/Technical-Excellence-Russia/coding-dojo-js)
+- [Template PHP project for Coding Dojo](https://github.com/Technical-Excellence-Russia/coding-dojo-php)
+
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
