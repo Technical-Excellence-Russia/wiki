@@ -1,6 +1,6 @@
 # Моб-программирование — командный подход к работе
 
-**Оригинал:** https://www.agilealliance.org/resources/experience-reports/mob-programming-agile2014/
+**Оригинал:** <https://www.agilealliance.org/resources/experience-reports/mob-programming-agile2014/>
 
 **Об авторе:** [Вуди Зил](https://www.agilealliance.org/author/5052028) (Woody Zuill) — независимый Agile гид и коуч, он также занимается программированием более 35 лет. Он является пионером в моб-программировании и одним из инициаторов дискуссии «#NoEstimates» в Twitter.
 
@@ -217,33 +217,34 @@
 Я очень признателен Джозефу Йодеру [YODER], который был моим наставником по этой статье. Без его помощи и руководства я бы не смог превратить свой запутанный набор идей в настоящую работу. У каждого должен быть шанс поработать с Джо — он настоящий профессионал.
 
 **Сноски и ссылки**
-- [PAIR] Парное программирование: Extreme Programming Explained: Embrace Change, 2nd Edition, Kent Beck - в русском переводе “Экстремальное программирование” Кента Бека, 2я версия книги 
-- [EXT] Экстремальное программирование: Extreme Programming Explained: Embrace Change, 2nd Edition, Kent Beck - в русском переводе “Экстремальное программирование” Кента Бека, 2я версия книги 
-- [TDD] разработка через тестирование https://www.agilealliance.org/glossary/tdd/: Test Driven Development: By Example, Kent Beck - в русском переводе “Экстремальное программирование. Разработка через тестирование” Кента Бека
-- [TURN] “Улучшай хорошее” произошло из идеи Кента Бека "Я бы повернул все ручки до 10 и посмотрел бы, что случится" в [EXT] 
-- [DOJO] Кодинг Додзё Coding Dojo – я узнал о кодинг Додзё от Льюэллина Фалько, который узнал об этой концепции от Лорана Боссавита, придумавшего эту идею вместе с Эммануилом Гайо. Эмили Бахе написала книгу на эту тему, доступную в LeanPub: https://leanpub.com/codingdojohandbook 
+
+- [PAIR] Парное программирование: Extreme Programming Explained: Embrace Change, 2nd Edition, Kent Beck - в русском переводе “Экстремальное программирование” Кента Бека, 2-я версия книги
+- [EXT] Экстремальное программирование: Extreme Programming Explained: Embrace Change, 2nd Edition, Kent Beck - в русском переводе “Экстремальное программирование” Кента Бека, 2-я версия книги
+- [TDD] разработка через тестирование <https://www.agilealliance.org/glossary/tdd/>: Test Driven Development: By Example, Kent Beck - в русском переводе “Экстремальное программирование. Разработка через тестирование” Кента Бека
+- [TURN] “Улучшай хорошее” произошло из идеи Кента Бека "Я бы повернул все ручки до 10 и посмотрел бы, что случится" в [EXT]
+- [DOJO] Кодинг Додзё Coding Dojo – я узнал о кодинг Додзё от Льюэллина Фалько, который узнал об этой концепции от Лорана Боссавита, придумавшего эту идею вместе с Эммануилом Гайо. Эмили Бахе написала книгу на эту тему, доступную в LeanPub: <https://leanpub.com/codingdojohandbook>
 - [RETR] Ретроспективы: Agile Retrospectives: Making Good Teams Great, Authors: Esther Derby, Diana Larsen - в русском переводе “Agile ретроспектива. Как превратить хорошую команду в великую” Эстер Дерби и Дианы Ларсен
-- [DRVR] Паттерн Пилот/Штурманы: Льюэллин Фалько написал немного на эту тему тут: https://llewellynfalco.blogspot.com/2014/06/llewellyns-strong-style-pairing.html
-- [AM] Agile манифест: http://agilemanifesto.org/ - в русском переводе http://agilemanifesto.org/iso/ru/manifesto.html
-- [APRN] Agile принципы: основополагающие принципы Agile манифеста http://agilemanifesto.org/principles.html - в русском переводе http://agilemanifesto.org/iso/ru/principles.html
-- [LCOF] Lean Coffee: Джим Бенсон и Джереми Лайтсмит, http://leancoffee.org/ 
-- [FADE] Исчезающие проблемы в блоге по моб программированию: https://mobprogramming.org/fading-problems/ 
-- [LEAN] Lean - бережливый способ разработки программного обеспечения, Том и Мэри Поппендик, http://www.poppendieck.com/ 
-- [S&R] Никто никогда не получит признание за решение проблем, которые никогда не возникали: Создание и поддержание процесса совершенствования. Н.Репеннинг и Д. Стерман (2001): http://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf 
-- [APPR] ApprovalTests - это библиотека, которая расширяет возможности модульного (unit) тестирования на многих языках программирования: http://blog.approvaltests.com/  
-- [YODER] Джозеф Йодер: http://www.joeyoder.com/ 
-- [LINKS] Вот несколько ссылок на статьи и видео об опыте работы с моб программированием в нашем командном блоге: http://mobprogramming.org/ 
-   * Таймлапс одного рабочего дня: https://www.youtube.com/watch?v=p_pvslS4gEI 
-   * AppFolio Engineering Блог: http://engineering.appfolio.com/2014/03/17/my-experience-with-mob-programming/ 
-   * Tagged: http://blog.tagged.com/2014/05/mobbing-tagged/#more-2520
-   * Agical: https://www.youtube.com/watch?v=goAMu-XqJts 
-   * Per Jansson: http://pichdude.wordpress.com/category/agile/ 
-   * Marcus Hammarberg: http://codebetter.com/marcushammarberg/2013/08/06/mob-programming/ 
-   * Kevin Rutherford http://java.dzone.com/articles/reflections-day-mob 
-   * Amy Lightholder: http://www.light-holder.com/mob-programming-at-shesgeeky/ (прим. переводчика - ссылка не работает, возможно она перенесена сюда http://www.light-holder.com/mob-programming-with-woody-zuill/)
-   * Моб рефакторинг: http://blog.codeclimate.com/blog/2014/01/30/mob-refactoring/ 
-   * Agila Sverige, Tobias Anderberg и Ville Svärd: https://agilasverige.solidtango.com/video/2013-05-20-agila-sverige-torget-d2p02  
-   * Ричард П. Габриэль на конференции ACM по объектно-ориентированному программированию, системам, языкам и приложениям 19 октября 2000 года в Миннеаполисе, штат Миннесота, США, по схожей концепции: http://www.dreamsongs.com/MobSoftware.html 
+- [DRVR] Паттерн Пилот/Штурманы: Льюэллин Фалько написал немного на эту тему тут: <https://llewellynfalco.blogspot.com/2014/06/llewellyns-strong-style-pairing.html>
+- [AM] Agile манифест: <http://agilemanifesto.org/> - в русском переводе <http://agilemanifesto.org/iso/ru/manifesto.html>
+- [APRN] Agile принципы: основополагающие принципы Agile манифеста <http://agilemanifesto.org/principles.html> - в русском переводе <http://agilemanifesto.org/iso/ru/principles.html>
+- [LCOF] Lean Coffee: Джим Бенсон и Джереми Лайтсмит, <http://leancoffee.org/>
+- [FADE] Исчезающие проблемы в блоге по моб программированию: <https://mobprogramming.org/fading-problems/>
+- [LEAN] Lean - бережливый способ разработки программного обеспечения, Том и Мэри Поппендик, <http://www.poppendieck.com/>
+- [S&R] Никто никогда не получит признание за решение проблем, которые никогда не возникали: Создание и поддержание процесса совершенствования. Н.Репеннинг и Д. Стерман (2001): <http://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf>
+- [APPR] ApprovalTests - это библиотека, которая расширяет возможности модульного (unit) тестирования на многих языках программирования: <http://blog.approvaltests.com/>  
+- [YODER] Джозеф Йодер: <http://www.joeyoder.com/>
+- [LINKS] Вот несколько ссылок на статьи и видео об опыте работы с моб программированием в нашем командном блоге: <http://mobprogramming.org/>
+- Таймлапс одного рабочего дня: <https://www.youtube.com/watch?v=p_pvslS4gEI>
+- AppFolio Engineering Блог: <http://engineering.appfolio.com/2014/03/17/my-experience-with-mob-programming/>
+- Tagged: <http://blog.tagged.com/2014/05/mobbing-tagged/#more-2520>
+- Agical: <https://www.youtube.com/watch?v=goAMu-XqJts>
+- Per Jansson: <http://pichdude.wordpress.com/category/agile/>
+- Marcus Hammarberg: <http://codebetter.com/marcushammarberg/2013/08/06/mob-programming/>
+- Kevin Rutherford <http://java.dzone.com/articles/reflections-day-mob>
+- Amy Lightholder: <http://www.light-holder.com/mob-programming-at-shesgeeky/> (прим. переводчика - ссылка не работает, возможно она перенесена сюда <http://www.light-holder.com/mob-programming-with-woody-zuill/>)
+- Моб рефакторинг: <http://blog.codeclimate.com/blog/2014/01/30/mob-refactoring/>
+- Agila Sverige, Tobias Anderberg и Ville Svärd: <https://agilasverige.solidtango.com/video/2013-05-20-agila-sverige-torget-d2p02>  
+- Ричард П. Габриэль на конференции ACM по объектно-ориентированному программированию, системам, языкам и приложениям 19 октября 2000 года в Миннеаполисе, штат Миннесота, США, по схожей концепции: <http://www.dreamsongs.com/MobSoftware.html>
 
 
 **Перевела:** [Светлана Кривенко](https://fb.com/sveta.krivenko.7). Статья переведена с согласия автора, в переводе максимально сохранена авторская стилистика.
