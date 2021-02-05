@@ -10,6 +10,11 @@
 - [Team and Technical Agility @ scaledagile.com](https://www.scaledagileframework.com/team-and-technical-agility/)
 - ...
 
+## Книги
+
+- Рекомендуемую сообществом литературу можно найти в [нашем наборе стикеров](https://t.me/addstickers/technicalexcellenceru).
+- ...
+
 ## Курсы по техническому совершенству
 
 В этом разделе хотим собрать курсы, слушатели которых могут получить знания по тем или иным аспектам технического совершенства.
@@ -24,7 +29,9 @@
 Вы можете их использовать для изучения программирования и практики TDD на незнакомой для вас технологии.
 
 - [Template Java project for Coding Dojo](https://github.com/Technical-Excellence-Russia/coding-dojo-java)
+- [Template .Net Core project for Coding Dojo](https://github.com/Technical-Excellence-Russia/coding-dojo-dotnetcore)
 - [Template JS project for Coding Dojo](https://github.com/Technical-Excellence-Russia/coding-dojo-js)
 - [Template PHP project for Coding Dojo](https://github.com/Technical-Excellence-Russia/coding-dojo-php)
+- ...
 
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
