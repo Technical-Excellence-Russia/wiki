@@ -1,0 +1,6 @@
+User agent: *
+Disallow: /lib/
+Disallow: /src/
+Disallow: /test/
+
+Sitemap: http://technical-excellence.ru/wiki/sitemap.xml
