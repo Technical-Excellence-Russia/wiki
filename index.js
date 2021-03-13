@@ -30,7 +30,6 @@ fs.writeFileContent(rootFileName, content).then(() => logger.infoFile(rootFileNa
 
 //Generate sitemap.xml
 const links = articles.map((a) => new Object({url: url + "/" + a.fileName, lastmod: a.updated, changefreq: "monthly"}));
-console.log(articles);
 startTime = new Date().getTime();
 streamToPromise(Readable.from(links).pipe(new SitemapStream({hostname: url}))).then((content) =>
     fs.writeFileContent(sitemapFileName, content).then(() => logger.infoFile(sitemapFileName, startTime)).catch(e => logger.error(e))
