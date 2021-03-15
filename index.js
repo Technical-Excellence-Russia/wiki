@@ -29,7 +29,7 @@ const content = Mustache.render(template, data);
 fs.writeFileContent(rootFileName, content).then(() => logger.infoFile(rootFileName, startTime)).catch(e => logger.error(e));
 
 //Generate sitemap.xml
-const links = articles.map((a) => new Object({url: url + "/" + a.fileName, lastmod: a.updated, changefreq: "monthly"}));
+const links = articles.map((a) => new Object({url: url + "/" + a.fileName.replace(".md", ".html"), lastmod: a.updated, changefreq: "monthly"}));
 startTime = new Date().getTime();
 streamToPromise(Readable.from(links).pipe(new SitemapStream({hostname: url}))).then((content) =>
     fs.writeFileContent(sitemapFileName, content).then(() => logger.infoFile(sitemapFileName, startTime)).catch(e => logger.error(e))
