@@ -161,8 +161,6 @@ final String outputDir = scratchDir.getAbsolutePath();
 
 Помните, что перед экспериментами с кодом, даже на первый взгляд очень очевидными нужно покрыть текущий код тестами. Это сэкономить вам много времени и нервов! А в статье о [Рефакторинге](Refactoring.md) можно найти несколько способов, как безопасно улучшить свой существующий код.
 
-Адаптировал: [Кротов Артём](https://fb.com/artem.v.krotov).
-
 ## Видео
 
 - [Clean Code - Uncle Bob / Lesson 1](https://youtu.be/7EmboKQH8lM "Clean Code - Uncle Bob / Lesson 1")
@@ -173,5 +171,7 @@ final String outputDir = scratchDir.getAbsolutePath();
 
 - [Clean Code: A Handbook of Agile Software Craftsmanship, Robert C. Martin, 2008](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 - [Чистый код. Создание анализ и рефакторинг, Роберт К. Мартин, 2019](https://www.ozon.ru/context/detail/id/142429922/)
+
+Адаптировал: [Кротов Артём](https://fb.com/artem.v.krotov).
 
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
