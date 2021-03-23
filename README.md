@@ -14,7 +14,10 @@
 - [Принцип открытости/закрытости (OCP)](OpenClosedprinciple.md)
 - [Принцип подстановки Барбары Лисков (LSP)](LiskovSubstitutionPrinciple.md)
 - [Принцип разделения интерфейсов (ISP)](InterfaceSegregationPrinciple.md)
+- [Принцип разделения команд и запросов (CQS)](CommandQuerySeparation.md)
 - [С чего начать?](GetStarted.md)
+- [Унаследованный код](LegacyCode.md)
+- [Чистый код (Clean Code)](CleanCode.md)
 
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
 
