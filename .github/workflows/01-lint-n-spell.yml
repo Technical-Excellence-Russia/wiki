@@ -29,16 +29,3 @@ jobs:
         run: npm run check
         env:
           CI: true
-
-      - name: Commit files
-        run: |
-          git config --local user.email "wiki[bot]@users.noreply.github.com"
-          git config --local user.name "wiki[bot]"
-          git add -A
-          git diff-index --quiet HEAD || git commit -m "Generate index"
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
