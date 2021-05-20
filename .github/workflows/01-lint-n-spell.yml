@@ -1,6 +1,6 @@
 name: Node CI
 
-on: [ push ]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [ 12.x ]
+        node-version: [ 14.x ]
 
     steps:
       - uses: actions/checkout@v1
@@ -18,15 +18,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Test & Generate
+      - name: Test
         run: |
           npm i
           npm test
-          npm start
         env:
           CI: true
 
-      - name: Lint & spellcheck markdown
+      - name: Lint markdown & spellcheck
         run: npm run check
         env:
           CI: true
