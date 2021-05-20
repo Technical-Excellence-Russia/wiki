@@ -89,6 +89,6 @@ Feature: Sign up
 
 2. <a name="footnote-2"></a> Книга Кента Бека Test-Driven Development: By Example.
 
-Перевел: [Тюрина Олеся](https://github.com/OlesiaTiurina).
+Перевела: [Тюрина Олеся](https://github.com/OlesiaTiurina).
 
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
