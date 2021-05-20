@@ -44,40 +44,27 @@ Behaviour-Driven Development (BDD) разрабатывается поверх T
 
 Ниже пример приемочного теста на Cucumber:
 
-```feature
+```gherkin
 Feature: Sign up
-
 
     Sign up should be quick and friendly
     
-
     Scenario: Successful sign up
     
-    
         New users should get a confirmation email and be greeted personally by the site once signed in.
-        
-        
+                
         Given I have chosen to sign up
-        
         When I sign up with valid details
-        
         Then I should receive a confirmation email
-        
         And I should see a personalized greeting message
         
     
     Scenario: Duplicate email
     
-    
         When someone tries to create an account for email address that already exists.
-        
-        
         Given I have chosen to sign up
-        
         But I enter an email address that has already registered
-        
         Then I should be told that the email is already registered
-        
         And I should be offered the option to recover my password
 ```
 
@@ -94,7 +81,7 @@ Feature: Sign up
 Для многих команд тесты становятся источником правды об истинном поведении системы. Имея одно место для хранения подобной информации экономит кучу времени, которое часто тратится впустую, пытаясь синхронизировать документацию, тесты и код. Это так же помогает построить доверие внутри команды, так как у членов команды отпадает нужда в хранении личных версий документов.
 
 
-**Информация взята из книги "The Cucumber Book Second Edition"**, **Matt Waynne**, **Aslak Hellesoy**, **with Steve Tooke*.
+**Информация взята из книги "The Cucumber Book Second Edition"**, **Matt Waynne**, **Aslak Hellesoy**, **with Steve Tooke**.
 
 ## Заметки
 
@@ -102,6 +89,6 @@ Feature: Sign up
 
 2. <a name="footnote-2"></a> Книга Кента Бека Test-Driven Development: By Example.
 
-Перевел: [Тюрина Олеся](https://github.com/OlesiaTiurina)...
+Перевел: [Тюрина Олеся](https://github.com/OlesiaTiurina).
 
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
