@@ -81,7 +81,7 @@ Feature: Sign up
 Для многих команд тесты становятся источником правды об истинном поведении системы. Имея одно место для хранения подобной информации экономит кучу времени, которое часто тратится впустую, пытаясь синхронизировать документацию, тесты и код. Это так же помогает построить доверие внутри команды, так как у членов команды отпадает нужда в хранении личных версий документов.
 
 
-Информация взята из книги ["The Cucumber Book Second Edition", Matt Waynne, Aslak Hellesoy, with Steve Tooke, 2012](https://pragprog.com/titles/hwcuc2/the-cucumber-book-second-edition/).
+Информация взята из книги ["The Cucumber Book Second Edition", Matt Waynne, Aslak Hellesoy, with Steve Tooke, 2017](https://pragprog.com/titles/hwcuc2/the-cucumber-book-second-edition/).
 
 ## Заметки
 
