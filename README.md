@@ -7,6 +7,7 @@
 - [SOLID - принципы](SOLID.md)
 - [Unit-тест](UnitTest.md)
 - [Xunit](Xunit.md)
+- [Автоматизированное приёмочное тестирование](AutomatedAcceptamceTesting.md)
 - [Инверсия управления (IoC)](InversionOfControl.md)
 - [Моб-программирование — командный подход к работе](MobProgramming.md)
 - [Принцип единственной ответственности (SRP)](SingleResponsibilityPrinciple.md)
