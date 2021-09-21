@@ -10,6 +10,7 @@
 - [Автоматизированное приёмочное тестирование](AutomatedAcceptanceTesting.md)
 - [Инверсия управления (IoC)](InversionOfControl.md)
 - [Моб-программирование — командный подход к работе](MobProgramming.md)
+- [Описательное тестирование](CharacterizationTesting.md)
 - [Принцип единственной ответственности (SRP)](SingleResponsibilityPrinciple.md)
 - [Принцип инверсии зависимостей (DIP)](DependencyInversionPrinciple.md)
 - [Принцип открытости/закрытости (OCP)](OpenClosedprinciple.md)
