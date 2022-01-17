@@ -27,12 +27,12 @@
   },
   "homepage": "https://github.com/Technical-Excellence-Russia/wiki#readme",
   "devDependencies": {
-    "@jest/types": "^27.2.5",
+    "@jest/types": "^27.4.2",
     "colors": "^1.4.0",
-    "jest": "^27.2.5",
-    "mustache": "^4.1.0"
+    "jest": "^27.4.7",
+    "mustache": "^4.2.0"
   },
   "dependencies": {
-    "sitemap": "6.4.0"
+    "sitemap": "^7.1.0"
   }
 }
