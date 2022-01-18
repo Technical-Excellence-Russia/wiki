@@ -9,6 +9,7 @@
 - [Xunit](Xunit.md)
 - [Автоматизированное приёмочное тестирование](AutomatedAcceptanceTesting.md)
 - [Инверсия управления (IoC)](InversionOfControl.md)
+- [Как заставить ревьювера вашего кода буквально влюбиться в вас](CodeReviewLoveForAuthors.md)
 - [Моб-программирование — командный подход к работе](MobProgramming.md)
 - [Описательное тестирование](CharacterizationTesting.md)
 - [Пирамида тестирования (Test Pyramid)](TestPyramid.md)
