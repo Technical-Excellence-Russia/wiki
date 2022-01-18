@@ -24,4 +24,4 @@
 
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
 
-Copyright (c) 2021 Technical Excellence Russia
+Copyright (c) 2022 Technical Excellence Russia
