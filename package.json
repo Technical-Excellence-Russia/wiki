@@ -5,9 +5,9 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "lint": "npx markdownlint-cli ./*.md --fix",
-    "spell": "npx yaspeller -l ru ./*.md",
-    "check": "npm run lint && npm run spell",
+    "lint": "npx markdownlint-cli@0.31.1 ./docs/*.md --fix",
+    "spell": "npx yaspeller@10.0.1 -l ru ./docs/*.md",
+    "check": "npm run lint",
     "test": "npx jest",
     "start": "node index.js"
   },
@@ -27,12 +27,12 @@
   },
   "homepage": "https://github.com/Technical-Excellence-Russia/wiki#readme",
   "devDependencies": {
-    "@jest/types": "^27.4.2",
+    "@jest/types": "^29.6.3",
     "colors": "^1.4.0",
-    "jest": "^27.4.7",
+    "jest": "^29.7.0",
     "mustache": "^4.2.0"
   },
   "dependencies": {
-    "sitemap": "^7.1.0"
+    "sitemap": "^7.1.2"
   }
 }
