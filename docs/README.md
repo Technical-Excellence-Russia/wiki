@@ -4,6 +4,9 @@
 
 ## Оглавление
 
+- [SOLID - принципы](SOLID.md)
+- [Unit-тест](UnitTest.md)
+- [Xunit](Xunit.md)
 - [Автоматизированное приёмочное тестирование](AutomatedAcceptanceTesting.md)
 - [Инверсия управления (IoC)](InversionOfControl.md)
 - [Как заставить ревьювера вашего кода буквально влюбиться в вас](CodeReviewLoveForAuthors.md)
@@ -19,9 +22,6 @@
 - [С чего начать?](GetStarted.md)
 - [Унаследованный код](LegacyCode.md)
 - [Чистый код (Clean Code)](CleanCode.md)
-- [SOLID - принципы](SOLID.md)
-- [Unit-тест](UnitTest.md)
-- [Xunit](Xunit.md)
 
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
 
