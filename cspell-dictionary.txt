@@ -5,10 +5,8 @@ Anderberg
 APPR
 APRN
 Aslak
-Behaviour
 chek
 ctxt
-deplyment
 DRVR
 favourite
 geekery
@@ -27,7 +25,6 @@ mainloop
 Ofseats
 OOPSLA
 Optinal
-propety
 Pшники
 Pшников
 Rebeca
@@ -106,7 +103,6 @@ Zuill
 верхнеуровневых
 видеотренингов
 виджетах
-вовлечённость
 воркшопа
 воркшопов
 деплой
