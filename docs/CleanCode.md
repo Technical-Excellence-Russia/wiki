@@ -329,6 +329,6 @@ Stream.of([1,2,3).map((i) -> i*i).filter((i) -> i > 1)...
 - [Clean Code: A Handbook of Agile Software Craftsmanship, Robert C. Martin, 2008](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 - [Чистый код. Создание анализ и рефакторинг, Роберт К. Мартин, 2019](https://www.ozon.ru/context/detail/id/142429922/)
 
-Адаптировал: [Кротов Артём](https://fb.com/artem.v.krotov).
+Адаптировал: [Кротов Артём](https://github.com/timmson).
 
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).

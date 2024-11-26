@@ -9,6 +9,6 @@
 
 ---
 
-Адаптировал: [Кротов Артём](https://fb.com/artem.v.krotov).
+Адаптировал: [Кротов Артём](https://github.com/timmson).
 
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
