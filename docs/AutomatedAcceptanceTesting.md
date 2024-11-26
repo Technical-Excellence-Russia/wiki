@@ -91,7 +91,7 @@ Feature: Sign up
 
 3. <a name="footnote-3"></a> Лиза Криспин, Джанет Грегори, "Agile Testing: A Practical Guide for Testers and Agile Teams" (на русском "Agile-тестирование: Обучающий курс для всей команды", 2019 г.).
 
-4. <a name="footnote-3"></a> Эрик Эванс, "Domain-Driven Design: Tackling Complexity in the Heart of Software" (на русском "Предметно-ориентированное проектирование (DDD). Структуризация сложных программных систем", 2018 г.).
+4. <a name="footnote-4"></a> Эрик Эванс, "Domain-Driven Design: Tackling Complexity in the Heart of Software" (на русском "Предметно-ориентированное проектирование (DDD). Структуризация сложных программных систем", 2018 г.).
 
 Адаптировала: [Тюрина Олеся](https://github.com/OlesiaTiurina).
 
