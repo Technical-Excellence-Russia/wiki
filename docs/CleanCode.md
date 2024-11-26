@@ -274,7 +274,7 @@ final String outputDir = scratchDir.getAbsolutePath();
 Также стоит отметить, что такая сцепка может не иметь таких побочных последствий, например, при использовании шаблона ```Builder``` мы уверены, что любой из методов в цепочке ```null``` не вернёт:
 
 ```java
-MyObject.builder().propetyOne(...).propetyTwo(...)...propetyN(...).build();
+MyObject.builder().propertyOne(...).propertyTwo(...)...propertyN(...).build();
 ```
 
 Или в частности при использовании Stream API:

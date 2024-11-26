@@ -1,0 +1,18 @@
+{
+  "version": "0.2",
+  "language": "en,ru",
+  "dictionaryDefinitions": [
+    {
+      "name": "cspell-dictionary",
+      "path": "./cspell-dictionary.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": [
+    "cspell-dictionary"
+  ],
+  "import": ["@cspell/dict-ru_ru/cspell-ext.json"],
+  "ignorePaths": [
+    "img"
+  ]
+}
