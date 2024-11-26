@@ -1,4 +1,5 @@
 const FS = require("./lib/fs")
+const path = require("path")
 const Parser = require("./lib/parser")
 const Logger = require("./lib/logger")
 const Mustache = require("mustache")
@@ -10,12 +11,12 @@ const parser = new Parser(fs)
 const logger = new Logger()
 
 const url = "https://technical-excellence.ru/wiki"
-const rootFileName = __dirname + "/docs/" + "README.md"
-const sitemapFileName = __dirname + "/docs/" + "sitemap.xml"
+const rootFileName = path.join(__dirname, "docs", "README.md")
+const sitemapFileName = path.join(__dirname, "docs", "sitemap.xml")
 
 
 logger.info("File generation:")
-const articles = parser.filesToArticles(__dirname + "/docs")
+const articles = parser.filesToArticles(path.join(__dirname, "docs"))
 
 const data = {
     currentYear: new Date().getFullYear(),
