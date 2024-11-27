@@ -4,6 +4,7 @@
 
 ## Оглавление
 
+- [CodeRetreat](CodeRetreat.md)
 - [SOLID - принципы](SOLID.md)
 - [Unit-тест](UnitTest.md)
 - [Xunit](Xunit.md)
