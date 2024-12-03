@@ -243,7 +243,7 @@ public void OneShortWordDoesNotWrap() throws Exception {
 }
 ```
 
-Чтобы удовлетворить условиям этого теста нам придется использовать **(unconditional->if)** также, как и **(constant->scalar)**.
+Чтобы удовлетворить условиям этого теста, нам придется использовать **(unconditional->if)** также, как и **(constant->scalar)**.
 
 ```java
 public static String wrap(String s, int length) {
