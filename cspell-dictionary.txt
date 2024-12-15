@@ -21,6 +21,8 @@ Lacht
 LCOF
 Lightholder
 Liskov
+longword
+longerword
 mainloop
 Ofseats
 OOPSLA
@@ -35,6 +37,7 @@ scrumalliance
 Svärd
 Tooke
 tset
+verylongword
 Ville
 Waynne
 Xunit
