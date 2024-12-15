@@ -431,6 +431,201 @@ f (s.length() <= length)
   }
 ```
 
+Преобразование **(unconditional->if)** с последующим **(null->constant)** делает свое дело. Более того, нет более простого теста для прохождения и более простого преобразования для использования.
+
+Чтобы избавиться от константы, требуется дополнительный тест:
+
+```java
+@Test
+public void TwoWordsLongerThanLimitShouldWrap() throws Exception {
+  assertThat(wrap("word word", 6), is("word\nword"));
+  assertThat(wrap("wrap here", 6), is("wrap\nhere"));
+}
+```
+
+Который зеленеет с помощью **(expression->function)**. Опять же, нет более простой проверки или преобразования. (Для краткости и чтобы эта статья не звучала как заезженная пластинка, я перестану делать это утверждение. Вы должны принять его на веру.)
+
+```java
+int space = s.indexOf(" ");
+    if (space >= 0)
+      return s.substring(0, space) + "\n" + s.substring(space+1);
+    else
+      return s.substring(0, length) + "\n" + wrap(s.substring(length), length);
+```
+
+Мы видим, что новое предложение требует преобразование **(statement->recursion)**. Поэтому мы пишем тест, который выявляет проблему:
+
+```java
+@Test
+public void ThreeWordsEachLongerThanLimitShouldWrap() throws Exception {
+  assertThat(wrap("word word word", 6), is("word\nword\nword"));
+}
+```
+
+Реализация для него довольно простая.
+
+```java
+if (space >= 0)
+      return s.substring(0, space) + "\n" + wrap(s.substring(space+1), length);
+    else
+      return s.substring(0, length) + "\n" + wrap(s.substring(length), length);
+```
+
+Теперь мы можем использовать рефакторинг, чтобы устранить дублирование.
+
+```java
+public class WordWrapper {
+  private int length;
+
+  public WordWrapper(int length) {
+    this.length = length;
+  }
+
+  public static String wrap(String s, int length) {
+    return new WordWrapper(length).wrap(s);
+  }
+
+  public String wrap(String s) {
+    if (length < 1)
+      throw new InvalidArgument();
+    if (s == null)
+      return "";
+
+    if (s.length() <= length)
+      return s;
+    else {
+      int space = s.indexOf(" ");
+      if (space >= 0) 
+        return breakBetween(s, space, space + 1);
+      else
+        return breakBetween(s, length, length);
+    }
+  }
+
+  private String breakBetween(String s, int start, int end) {
+    return s.substring(0, start) + 
+      "\n" + 
+      wrap(s.substring(end), length);
+  }
+
+  public static class InvalidArgument extends RuntimeException {
+  }
+}
+```
+
+Следующий тест гарантирует, что мы поставим перевод строки на последнем промежутке между словами до достижения лимита.
+
+```java
+@Test
+public void ThreeWordsJustOverTheLimitShouldBreakAtSecond() throws Exception {
+  assertThat(wrap("word word word", 11), is("word word\nword"));
+}
+```
+
+Это требует преобразования **(expression->function)**, но это настолько просто, что очевидно.
+
+```java
+int space = s.lastIndexOf(" ");
+```
+
+Хотя это и проходит новый тест, это ломает предыдущий тест. Но мы можем выполнить еще одно преобразование **(expression->function)**, чтобы исправить это.
+
+```java
+int space = s.substring(0, length).lastIndexOf(" ");
+```
+
+Везде, где используются пределы, необходимо учитывать закон трихотомии. Все длины, использованные в тестах, однозначно выходили за пределы положения разрывного пространства. Но что произойдет, если мы разорвемся прямо на пространстве.
+
+```java
+@Test
+public void TwoWordsTheFirstEndingAtTheLimit() throws Exception {
+  assertThat(wrap("word word", 4), is("word\nword"));
+}
+```
+
+Это не удается, но может быть выполнено с помощью преобразования **(expression->function)**.
+
+```java
+int space = s.substring(0, length+1).lastIndexOf(" ");
+```
+
+Это может не выглядеть как **(expression->function)**, но это так. Добавление — это функция. Мы могли бы также сказать ```add(length, 1)```.
+
+##### Iteration instead of Recursion
+
+Теперь давайте отмотаем время назад и посмотрим, как может развиваться итеративное, а не рекурсивное решение. Помните, что мы ввели **(statement->recursion)**, пытаясь пройти следующий тест:
+
+```java
+@Test
+public void WordLongerThanTwiceLengthShouldBreakTwice() throws Exception {
+  assertThat(wrap("verylongword", 4), is("very\nlong\nword"));
+}
+```
+
+The failing code looks like this:
+
+```java
+if (s.length() <= length)
+    return s;
+else {
+    return s.substring(0, length) + "\n" + s.substring(length);
+}
+```
+
+Мы можем сделать этот проход, используя преобразование **(if->while)**. Если мы собираемся использовать while, то нам нужно инвертировать условный оператор if. Это простой рефакторинг, **а не преобразование**.
+
+```java
+if (s.length() > length) {
+    return s.substring(0, length) + "\n" + s.substring(length);
+} else {
+    return s;
+}
+```
+
+Далее нам нужно создать переменную для хранения состояния итерации. Еще раз, это рефакторинг, а не трансформация.
+
+```java
+String result = "";
+  if (s.length() > length) {
+result = s.substring(0, length) + "\n" + s.substring(length);
+  } else {
+result = s;
+  }
+          return result;
+}
+```
+
+Циклы While не могут иметь предложений else, поэтому нам нужно исключить путь else, сделав меньше в пути if. Опять же, это рефакторинг.
+
+```java
+String result = "";
+if (s.length() > length) {
+    result = s.substring(0, length) + "\n";
+    s = s.substring(length);
+}
+result += s;
+```
+
+И теперь мы можем использовать преобразование **(if->while)**, чтобы удовлетворить тест.
+
+```java
+String result = "";
+while (s.length() > length) {
+    result += s.substring(0, length) + "\n";
+    s = s.substring(length);
+}
+result += s;
+```
+
+## Процесс
+
+### Проблемы
+
+### Implications
+
+### Заключение
+
+
 Адаптировал: [Кротов Артём](https://github.com/timmson).
 
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
