@@ -1,8 +1,6 @@
-# Предположение о порядке преобразований (TPP, the) [draft]
+# Предположение о порядке преобразований (англ. The Transformation Priority Premise) [draft]
 
 Оригинальный текст из статьи Робертом Мартина [The Transformation Priority Premise](https://blog.cleancoder.com/uncle-bob/2013/05/27/TheTransformationPriorityPremise.html).
-
-## Предположение о порядке преобразований (англ. The Transformation Priority Premise)
 
 19 Декабря 2010 года
 
