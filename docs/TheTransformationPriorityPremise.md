@@ -1,4 +1,4 @@
-# Предположение о порядке преобразований (англ. The Transformation Priority Premise) [draft]
+# Предположение о порядке преобразований (англ. The Transformation Priority Premise)
 
 Оригинальный текст из статьи Робертом Мартина [The Transformation Priority Premise](https://blog.cleancoder.com/uncle-bob/2013/05/27/TheTransformationPriorityPremise.html).
 
