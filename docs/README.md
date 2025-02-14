@@ -14,6 +14,7 @@
 - [Моб-программирование — командный подход к работе](MobProgramming.md)
 - [Описательное тестирование](CharacterizationTesting.md)
 - [Пирамида тестирования (Test Pyramid)](TestPyramid.md)
+- [Предположение о порядке преобразований (англ. The Transformation Priority Premise)](TheTransformationPriorityPremise.md)
 - [Принцип единственной ответственности (SRP)](SingleResponsibilityPrinciple.md)
 - [Принцип инверсии зависимостей (DIP)](DependencyInversionPrinciple.md)
 - [Принцип открытости/закрытости (OCP)](OpenClosedprinciple.md)
