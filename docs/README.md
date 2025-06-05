@@ -8,7 +8,6 @@
 - [SOLID - принципы](SOLID.md)
 - [Unit-тест](UnitTest.md)
 - [Xunit](Xunit.md)
-- [Степени свободы в TDD](TDD-DegreesOfFreedom.md)
 - [Автоматизированное приёмочное тестирование](AutomatedAcceptanceTesting.md)
 - [Инверсия управления (IoC)](InversionOfControl.md)
 - [Как заставить ревьювера вашего кода буквально влюбиться в вас](CodeReviewLoveForAuthors.md)
@@ -23,6 +22,7 @@
 - [Принцип разделения интерфейсов (ISP)](InterfaceSegregationPrinciple.md)
 - [Принцип разделения команд и запросов (CQS)](CommandQuerySeparation.md)
 - [С чего начать?](GetStarted.md)
+- [Степени свободы в TDD](TDD-DegreesOfFreedom.md)
 - [Унаследованный код](LegacyCode.md)
 - [Чистый код (Clean Code)](CleanCode.md)
 
