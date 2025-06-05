@@ -8,6 +8,7 @@
 - [SOLID - принципы](SOLID.md)
 - [Unit-тест](UnitTest.md)
 - [Xunit](Xunit.md)
+- [Степени свободы в TDD](TDD-DegreesOfFreedom.md)
 - [Автоматизированное приёмочное тестирование](AutomatedAcceptanceTesting.md)
 - [Инверсия управления (IoC)](InversionOfControl.md)
 - [Как заставить ревьювера вашего кода буквально влюбиться в вас](CodeReviewLoveForAuthors.md)
