@@ -2,30 +2,49 @@
 
 Подборка материалов по техническому совершенству.
 
-## Оглавление
+### Оглавление
+
+- [С чего начать?](GetStarted.md)
+
+### События
 
 - [CodeRetreat](CodeRetreat.md)
-- [SOLID - принципы](SOLID.md)
-- [Unit-тест](UnitTest.md)
-- [Xunit](Xunit.md)
-- [Автоматизированное приёмочное тестирование](AutomatedAcceptanceTesting.md)
-- [Инверсия управления (IoC)](InversionOfControl.md)
-- [Как заставить ревьювера вашего кода буквально влюбиться в вас](CodeReviewLoveForAuthors.md)
+
+### Практики XP
+
 - [Моб-программирование — командный подход к работе](MobProgramming.md)
-- [Описательное тестирование](CharacterizationTesting.md)
+- [Unit-тестирование](UnitTest.md)
+- [Непрерывная интеграция](CI.md)
+- [Автоматизированное приёмочное тестирование](AutomatedAcceptanceTesting.md)
+- [Test-Driven Development](TDD.md)
+
+### Дополнительные практики
+
+- [Работа с легаси-кодом](LegacyCode.md)
+- [Как заставить ревьювера вашего кода буквально влюбиться в вас](CodeReviewLoveForAuthors.md)
+
+### Авто-тестирование
+
 - [Пирамида тестирования (Test Pyramid)](TestPyramid.md)
+- [Описательное тестирование](CharacterizationTesting.md)
+
+### Test-Driven Development (TDD)
+
 - [Предположение о порядке преобразований (англ. The Transformation Priority Premise)](TheTransformationPriorityPremise.md)
+- [Степени свободы в TDD](TDD-DegreesOfFreedom.md)
+
+### Принципы дизайна кода
+
+- [Чистый код (Clean Code)](CleanCode.md)
+- [SOLID - принципы](SOLID.md)
 - [Принцип единственной ответственности (SRP)](SingleResponsibilityPrinciple.md)
-- [Принцип инверсии зависимостей (DIP)](DependencyInversionPrinciple.md)
 - [Принцип открытости/закрытости (OCP)](OpenClosedprinciple.md)
 - [Принцип подстановки Барбары Лисков (LSP)](LiskovSubstitutionPrinciple.md)
 - [Принцип разделения интерфейсов (ISP)](InterfaceSegregationPrinciple.md)
+- [Принцип инверсии зависимостей (DIP)](DependencyInversionPrinciple.md)
+- [Инверсия управления (IoC)](InversionOfControl.md)
 - [Принцип разделения команд и запросов (CQS)](CommandQuerySeparation.md)
-- [С чего начать?](GetStarted.md)
-- [Степени свободы в TDD](TDD-DegreesOfFreedom.md)
-- [Унаследованный код](LegacyCode.md)
-- [Чистый код (Clean Code)](CleanCode.md)
 
 Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
 
-Copyright (c) 2025 Technical Excellence Russia
+Copyright (c) 2026 Technical Excellence Russia

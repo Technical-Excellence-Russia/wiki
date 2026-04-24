@@ -26,8 +26,8 @@ const data = {
 // Generate README.md
 const template = fs.readFile(rootFileName + ".template")
 let startTime = new Date().getTime()
-const content = Mustache.render(template, data)
-fs.writeFileContent(rootFileName, content).then(() => logger.infoFile(rootFileName, startTime)).catch(e => logger.error(e))
+// const content = Mustache.render(template, data)
+//fs.writeFileContent(rootFileName, content).then(() => logger.infoFile(rootFileName, startTime)).catch(e => logger.error(e))
 
 //Generate sitemap.xml
 const links = articles.map((a) => new Object({
