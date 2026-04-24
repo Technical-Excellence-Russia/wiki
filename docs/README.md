@@ -14,7 +14,7 @@
 
 - [Моб-программирование — командный подход к работе](MobProgramming.md)
 - [Unit-тестирование](UnitTest.md)
-- [Непрерывная интеграция](CI.md)
+- [Непрерывная интеграция](ContinuousIntegration.md)
 - [Автоматизированное приёмочное тестирование](AutomatedAcceptanceTesting.md)
 - [Test-Driven Development](TDD.md)
 
